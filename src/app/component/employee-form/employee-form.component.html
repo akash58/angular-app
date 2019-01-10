@@ -1,0 +1,49 @@
+<div class="container">
+  <form [formGroup]="addEmployeeForm" (ngSubmit)="processForm(addEmployeeForm.value)" id="add-employee" class="form-horizontal form-label-left">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4>Employee Information</h4>
+      </div>
+      <div class="panel-body">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Name
+              <span class="red">*</span>
+            </label>
+            <div class="col-md-7 col-sm-9 col-xs-12">
+              <input type="text" class="form-control" (change)="validateForm()" placeholder="Name" name="name" id="name" formControlName="name">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Description
+              <span class="red">*</span>
+            </label>
+            <div class="col-md-7 col-sm-9 col-xs-12">
+              <input type="text" class="form-control" (change)="validateForm()" placeholder="Description" name="description" id="description"
+                formControlName="description">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Salary
+              <span class="red">*</span>
+            </label>
+            <div class="col-md-7 col-sm-9 col-xs-12">
+              <input type="text" class="form-control" (change)="validateForm()" placeholder="Salary" name="salary" id="salary" formControlName="salary">
+            </div>
+          </div>
+        </div>
+        <div class="form-group text-center">
+          <div class="col-md-12 submit-btn-grp">
+            <button type="button" routerLink="/list_employee" class="btn btn-danger" style="margin-right: 10px;">Cancel</button>
+            <button type="submit" class="btn btn-success">Save</button>
+          </div>
+        </div>
+        <div class="error_msg addEmployeeFormError" [innerHtml]="addEmployeeFormError"></div>
+      </div>
+    </div>
+  </form>
+</div>

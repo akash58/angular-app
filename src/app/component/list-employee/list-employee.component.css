@@ -1,0 +1,71 @@
+::ng-deep .custom_table {
+    min-width: 100%;
+}
+
+::ng-deep .custom_table td, ::ng-deep .custom_table  th {
+    padding: 10px 20px;
+    color: black;
+    vertical-align: middle;
+    border-bottom: 1px solid #e1e0e3;
+    font-size: 12px;
+    border-bottom: none !important;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+::ng-deep .custom_table td {
+    /*font-weight: 100 !important;*/
+    white-space: unset;
+    color: #969696 !important;
+}
+
+::ng-deep .custom_table th {
+    white-space: nowrap !important;
+    color: #484848 !important;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 12px;
+    background-color: #F3F3F3;
+}
+
+
+/*::ng-deep .custom_table tr:nth-child(odd) {*/
+/*background: #CCC*/
+/*}*/
+
+::ng-deep .custom_table td a:hover {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
